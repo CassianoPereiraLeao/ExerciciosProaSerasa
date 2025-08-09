@@ -3,9 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Contato</title>
 </head>
 <body>
-    
+    <header>
+        <h1><img src="imgs/logo.png" alt="Logo do site com o uma menina fofa de anime segurando uma cenoura"></h1>
+
+        <nav>
+            <ul id="nav">
+                <li><a href="index.html" alt="Navegação para o início">Início</a></li>
+                <li><a href="sobre.html" alt="Navegação para a área que fala mais sobre o Cassiano">Sobre mim</a></li>
+                <li><a href="contato.html" alt="Navegação para a área com formulário para contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Deixe seu contato comigo</h2>
+            <form action="contato.html" method="POST" onsubmit="getInfos()">
+                <label for="nome">Nome</label>
+                <input type="text" placeholder="Digite seu nome" name="nome" id="nameInput" required>
+
+                <label for="email">E-mail</label>
+                <input type="email" placeholder="Digite seu email" name="email" id="emailInput" required>
+
+                <label for="comments"></label>
+                <textarea name="comments" id="comment" placeholder="Deixe um comentário"></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+        <section>
+            <div id="contact">
+                <h2>Contato informado</h2>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Todos os direitos reservados</p>
+    </footer>
+
+    <script src="js/forms.js"></script>
 </body>
 </html>
