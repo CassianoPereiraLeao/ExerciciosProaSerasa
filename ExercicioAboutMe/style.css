@@ -73,9 +73,10 @@ img {
     align-items: center;
 }
 
-img .icon {
-    width: 80px;
+.icon {
+    width: 40px;
     height: auto;
+    margin: 0px 5px;
 }
 
 ul#nav > li {
@@ -91,11 +92,14 @@ a {
 }
 
 footer {
+    display: flex;
+    align-items: center;
     background-color: black;
     color: white;
     bottom: 100%;
+    height: 50px;
 }
 
 footer > p {
-    text-align: center;
+    text-align: right;
 }
