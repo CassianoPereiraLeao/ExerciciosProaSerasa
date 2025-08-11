@@ -16,6 +16,6 @@ window.onload = () => {
         paragraf.style.whiteSpace = "pre-line";
         const text = document.createTextNode(`Nome: ${infos.name}\nE-mail: ${infos.email}\nComentário: ${infos.comment}`);
         paragraf.appendChild(text);
-        document.getElementById("contact").appendChild(paragraf);
+        document.getElementById("infoContact").appendChild(paragraf);
     }
 }
